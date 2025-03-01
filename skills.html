@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+body{
+    background-image: url(bgbg.png);
+    background-repeat: repeat;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain; 
+}
+
+*{  
+    box-sizing: border-box;
+}
+
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lightbox img{
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px ridge black;
+    border-radius: 50px;
+}
+
+.lightbox:target{
+    display: flex;
+}
+
+
+
+.close{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+img:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);   
+    border: 5px solid #414141;
+    border-radius: 25px;
+
+}
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo" class="logo img-fluid">  
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+   
+
+    <header class="d-flex justify-content-between align-items-center p-3 bg-dark">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav" >
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link text-warning" href="skills.html">SKILLS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="projects.html">PROJECTS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">CONTACTS</a></li>
+
+            </ul>
+        </div>
+        </header>
+</div>
+</nav>
+
+<div class="container d-flex flex-column align-items-center text-center mt-5">
+    <div class="display-4 text-white">  <b><b>Design skills</b></b></div>
+    <br>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img1"><img src="image1.webp" alt="" class="card-img-top image1 img-fluid" data-aos="fade-up" data-aos-duration="1500"></a>
+                <div class="card-body">
+                    <h5 classs= "card-title">Front-End Skill</h5>
+                    <p>An application design with animation presenting the login interface of an app.</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
+                <a href="#img2"><img src="image2.webp" alt="" class="card-img-top image2 img-fluid" data-aos="fade-up" data-aos-duration="1500"></a>
+                <div class="card-body">
+                    <h5 classs="card-title ">Photoshop Skill</h5>
+                    <p>Graphic picture representing an advertisement for a T-shirt using Photoshop.</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
+               <a href="#img3"> <img src="image3.webp" alt="" class="card-img-top image3 img-fluid" data-aos="fade-up" data-aos-duration="1500" > </a>
+                <div class="card-body">
+                    <h5 classs="card-title">Design Skill</h5>
+                    <p>A custom graphic design on cars, like a vehicle wrap.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+
+
+    <div class="container d-flex flex-column align-items-center text-center mt-5">
+        <div class="display-4 text-white">  <b><b>Programming skills</b></b></div>
+        <br>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
+                    <a href="#img4"><img src="prog1.png" alt="" class="card-img-top prog1 img-fluid" data-aos="fade-up" data-aos-duration="1500" ></a>
+                    <div class="card-body">
+                        <h5 classs="card-title">Front-End Development</h5>
+                        <p>HTML, CSS, Bootstrap, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
+                   <a href="#img5"> <img src="prog2.png" alt="" class="card-img-top prog2 img-fluid" data-aos="fade-up" data-aos-duration="1500" ></a>
+                    <div class="card-body">
+                        <h5 classs="card-title">Back-End Development</h5>
+                        <p>PHP, MyPHPadmin, SHELL</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
+                    <a href="#img6"><img src="prog3.png" alt="" class="card-img-top prog3 img-fluid" data-aos="fade-up" data-aos-duration="1500"></a>
+                    <div class="card-body">
+                        <h5 classs="card-title">Version Control & Tools</h5>
+                        <p>Git, GitHub, Figma</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
+        <div id="img1" class="lightbox">
+            <a href="#" class="close"> </a>
+            <img src="image1.webp">
+        </div>
+   
+        <div id="img2" class="lightbox">
+            <a href="#" class="close"> </a>
+            <img src="image2.webp">
+        </div>
+   
+        <div id="img3" class="lightbox">
+            <a href="#" class="close"> </a>
+            <img src="image3.webp">
+        </div>
+   
+        <div id="img4" class="lightbox">
+            <a href="#" class="close"> </a>
+            <img src="prog1.png">
+        </div>
+   
+
+        <div id="img5" class="lightbox">
+            <a href="#" class="close"> </a>
+            <img src="prog2.png">
+        </div>
+   
+
+        <div id="img6" class="lightbox">
+            <a href="#" class="close"> </a>
+            <img src="prog3.png">
+        </div>
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+</script>
+</body>
+</html>

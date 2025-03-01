@@ -1,0 +1,26 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    cursor: url("mypic.png") 10 10, default;
+}
+
+
+
+.logo{
+    width: 70px;
+    height: auto;
+    max-width: 100%;
+
+}
+        .text-white{
+            color: #FFFFFF !important;
+                }
+
+        body {
+            background-color: #171717;
+            margin: 0;
+            padding: 0;
+        }
+

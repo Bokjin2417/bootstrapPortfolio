@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+
+
+
+
+*{  
+    box-sizing: border-box;
+}
+
+
+
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lightbox img{
+    max-width: 70%;
+    max-height: 70vh;
+    border: 5px ridge black;
+    border-radius: 50px;
+}
+
+.lightbox:target{
+    display: flex;
+}
+
+
+
+.close{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.lightbox-content {
+    background: rgba(48, 48, 48, 0.9); 
+    border: 5px ridge black;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 80%;
+    color: black;
+}
+
+img:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.2);   
+    border: 5px solid #414141;
+    border-radius: 25px;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo" class="logo img-fluid">  
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+   
+
+    <header class="d-flex justify-content-between align-items-center p-3 bg-dark">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav" >
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="skills.html">SKILLS</a></li>
+                <li class="nav-item"><a class="nav-link text-warning" href="projects.html">PROJECTS</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacts.html">CONTACTS</a></li>
+
+            </ul>
+        </div>
+        </header>
+</div>
+</nav>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-lg-start text-center mb-4">
+            <div class="display-4 text-white"><b><b>PREVIOUS</b></b></div>
+            <div class="display-4 text-warning"><b><b>PROJECTS:</b></b></div>
+        </div>
+    </div>
+
+    <div class="row g-2">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+          <a href="#img1"><img src="prev1.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 1"    data-aos="fade-up" data-aos-duration="1200"></a>
+            </div>  
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img2"> <img src="prev2.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 2" data-aos="fade-up" data-aos-duration="1200"></a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img3"> <img src="prev3.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 3" data-aos="fade-up" data-aos-duration="1200"> </a>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img4"><img src="prev4.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 4" data-aos="fade-up" data-aos-duration="1200"></a>
+            </div>
+        </div>
+
+     </div>
+ </div>
+
+
+
+ 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-lg-start text-center mb-4">
+            <div id="ito" class="display-4 text-white"><b><b>FUTURE</b></b></div>
+            <div class="display-4 text-warning"><b><b>PROJECTS:</b></b></div>
+        </div>
+    </div>
+
+    <div class="row g-2">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img5">  <img src="projprototype.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 1" data-aos="fade-up" data-aos-duration="1200"> </a>
+            </div>  
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img6">   <img src="projdatabase.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 2" data-aos="fade-up" data-aos-duration="1200"> </a>
+            </div> 
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img7">  <img src="projbackend.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 3" data-aos="fade-up" data-aos-duration="1200"></a>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
+                <a href="#img8"> <img src="projdoc.png" class="img-fluid w-100 rounded border border-3 border-dark" alt="Image 4" data-aos="fade-up" data-aos-duration="1200"> </a>
+            </div>
+        </div>
+
+     </div>
+ </div>
+
+<div id="img1" class="lightbox">
+    <a href="#" class="close"></a>
+    <div class="lightbox-content">
+    <img src="prev1.png" alt="">
+    <p class="display-6 text-white"><b>TaskFlow Made back in 2024 in our HCI101
+    </b></p>
+</div>
+</div>
+
+
+<div id="img2" class="lightbox">
+    <a href="#" class="close"></a>
+    <div class="lightbox-content">
+    <img src="prev2.png" alt="">
+    <p class="display-6 text-white"><b>Island Explorer Made this 2025 my Activity in HCI102</b></p>
+    </div>
+</div>
+
+
+<div id="img3" class="lightbox">
+    <a href="#" class="close"></a>
+    <div class="lightbox-content">
+    <img src="prev3.png" alt="">
+    <p class="display-6 text-white"><b>Present Design Made with HTML & CSS project in WD101</b></p>
+    </div>
+</div>
+
+<div id="img4" class="lightbox">
+    <a href="#" class="close"></a>
+    <div class="lightbox-content">
+    <img src="prev4.png" alt="">
+    <p class="display-6 text-white"><b>Game Designs Ordered by Clients
+    </b></p>
+</div>
+</div>
+
+
+<div id="img5" class="lightbox">
+    <a href="#" class="close"></a>
+    <div class="lightbox-content">
+    <img src="projprototype.png" alt="">
+    <p class="display-6 text-white"><b>Faculty Scheduling System Prototype</b></p>
+    </div>
+</div>
+
+<div id="img6" class="lightbox">
+
+    <a href="#" class="close"></a>
+    <div class="lightbox-content">
+    <img src="projdatabase.png" alt="">
+    <p class="display-6 text-white"><b>Database (Backend & Storage)</b></p>
+    </div>
+</div>
+
+<div id="img7" class="lightbox">
+
+    <div class="lightbox-content">
+    <a href="#" class="close"></a>
+    <img src="projbackend.png" alt="">
+    <p class="display-6 text-white"><b>System Logic (Backend Development)</b></p>
+    </div>
+
+</div>
+
+<div id="img8" class="lightbox">
+    <a href="#" class="close" ></a>
+    <div class="lightbox-content">
+    <img src="projdoc.png" alt="">
+    <p class="display-6 text-white"><b>Documentation & Reports</b></p>
+    </div>
+
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init(); 
+</script>
+</body>
+</html>
