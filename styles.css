@@ -23,4 +23,33 @@ body {
             margin: 0;
             padding: 0;
         }
+@media (min-width: 992px) {
+    .container {
+        max-width: 1200px; 
+    }
 
+    .text-container {
+        text-align: left !important; 
+    }
+
+    .row.align-items-center {
+        flex-direction: row !important; 
+    }
+
+    .mypic {
+        width: 450px !important; 
+        height: auto !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1300px; 
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        flex: 1;
+    }
+}
