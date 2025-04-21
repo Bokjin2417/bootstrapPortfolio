@@ -98,54 +98,75 @@ img:hover{
 </div>
 </nav>
 
-<div class="container d-flex flex-column align-items-center text-center mt-5">
-    <div class="display-4 text-white">  <b><b>Design skills</b></b></div>
-    <br>
-    <br>
-    <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class=" bg- card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px; ">
-                <a href="#img1"><img src="image1.webp" alt="" class="card-img-top image1 img-fluid" data-aos="fade-up" data-aos-duration="1500"></a>
-                <div class="card-body">
-                    <h5 classs= "card-title">Front-End Skill</h5>
-                    <p>An application design with animation presenting the login interface of an app.</p>
+<div class="container mt-5">
+    <div class="display-4 text-white text-center mb-4"><b><b>Design Skills</b></b></div>
+
+    <div id="designCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="card p-3 border border-5 border-secondary" style="border-radius: 30px; width: 18rem;">
+                        <a href="#img1"><img src="image1.webp" class="card-img-top img-fluid" alt="..." data-aos="fade-up"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Front-End Skill</h5>
+                            <p class="card-text">An application design with animation presenting the login interface of an app.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-    
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
-                <a href="#img2"><img src="image2.webp" alt="" class="card-img-top image2 img-fluid" data-aos="fade-up" data-aos-duration="1500"></a>
-                <div class="card-body">
-                    <h5 classs="card-title ">Photoshop Skill</h5>
-                    <p>Graphic picture representing an advertisement for a T-shirt using Photoshop.</p>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card p-3 border border-5 border-secondary" style="border-radius: 30px; width: 18rem;">
+                        <a href="#img2"><img src="image2.webp" class="card-img-top img-fluid" alt="..." data-aos="fade-up"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Photoshop Skill</h5>
+                            <p class="card-text">Graphic picture representing an advertisement for a T-shirt using Photoshop.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-    
-        <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
-               <a href="#img3"> <img src="image3.webp" alt="" class="card-img-top image3 img-fluid" data-aos="fade-up" data-aos-duration="1500" > </a>
-                <div class="card-body">
-                    <h5 classs="card-title">Design Skill</h5>
-                    <p>A custom graphic design on cars, like a vehicle wrap.</p>
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="card p-3 border border-5 border-secondary" style="border-radius: 30px; width: 18rem;">
+                        <a href="#img3"><img src="image3.webp" class="card-img-top img-fluid" alt="..." data-aos="fade-up"></a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Design Skill</h5>
+                            <p class="card-text">A custom graphic design on cars, like a vehicle wrap.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
-        
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#designCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#designCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
     </div>
-    </div>
-    
+</div>
 
 
-    <div class="container d-flex flex-column align-items-center text-center mt-5">
-        <div class="display-4 text-white">  <b><b>Programming skills</b></b></div>
+
+
+
+
+<div class="container mt-5">
+    <div class="display-4 text-white text-center mb-4"><b><b>Programming skills</b></b></div>
         <br>
         <br>
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-4 col-sm-6">
+
+        <div id="progCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+
+         <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
                 <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
                     <a href="#img4"><img src="prog1.png" alt="" class="card-img-top prog1 img-fluid" data-aos="fade-up" data-aos-duration="1500" ></a>
                     <div class="card-body">
@@ -154,9 +175,11 @@ img:hover{
                     </div>
                 </div>
             </div>
+        </div>
         
         
-            <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="carousel-item">
+            <div class="d-flex justify-content-center">
                 <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
                    <a href="#img5"> <img src="prog2.png" alt="" class="card-img-top prog2 img-fluid" data-aos="fade-up" data-aos-duration="1500" ></a>
                     <div class="card-body">
@@ -165,9 +188,12 @@ img:hover{
                     </div>
                 </div>
             </div>
+        </div>
         
         
-            <div class="col-lg-3 col-md-4 col-sm-6">
+          
+        <div class="carousel-item">
+            <div class="d-flex justify-content-center">
                 <div class="card h-100 p-3 border border-5 border-secondary" style="border-radius: 30px;">
                     <a href="#img6"><img src="prog3.png" alt="" class="card-img-top prog3 img-fluid" data-aos="fade-up" data-aos-duration="1500"></a>
                     <div class="card-body">
@@ -176,9 +202,20 @@ img:hover{
                     </div>
                 </div>
             </div>
+        </div>
             
         </div>
-        </div>
+
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#progCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#progCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+     </div>
 
         <div id="img1" class="lightbox">
             <a href="#" class="close"> </a>
